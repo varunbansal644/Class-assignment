@@ -30,15 +30,16 @@ public class Binary_tree
 	}
 	public static void main(String[] args) 
 	{	
-	Binary_tree b =new Binary_tree();
-	b.root=new Node(10);
-	b.root.left=new Node(20);
-	b.root.right=new Node(30);
-	b.root.left.left=new Node(40);
-	b.root.right.left=new Node(50);
+	Binary_tree btree =new Binary_tree();
+	btree.root=new Node(10);
+	btree.root.left=new Node(20);
+	btree.root.right=new Node(30);
+	btree.root.left.left=new Node(40);
+	btree.root.right.left=new Node(50);
+	btree.root.right.right=new Node(60);	
 	System.out.println(b.root.data);
-	b.print(b.root);
-	System.out.println(b.root.right.data);
-	b.print(b.root.right);
+	btree.print(btree.root);
+	System.out.println(btree.root.right.data);
+	btree.print(btree.root.right);
 	}
 }
